@@ -1,48 +1,33 @@
 <!DOCTYPE html>
-
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tabela</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
     <style>
-      body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table{
+        table {
+            width: 100%;
             border-collapse: collapse;
         }
-        caption{
-            font-size: 1.3em;
-            font-weight: bold;
-            padding: 10px;
-        }
-
-        th, td{
-            border: 1px solid rgb(255, 0, 0);
-            padding: 10px;
-        }
-
-        td{
-            border:2px solid black;
+        th, td {
+            border: 1px solid #008cff;
+            text-align: left;
             padding: 8px;
-            text-align: center;
-            vertical-align: middle;
         }
-
-        tr:nth-child(even){
-            background-color: rgb(17, 0, 255);
+        tr:nth-child(even) {
+            background-color: #0066ff;
         }
-       
-        div#conteiner{
-            overflow-x: auto;
+        @media only screen and (max-width: 600px) {
+            table, th, td {
+                width: 100%;
+                display: block;
+            }
         }
-    
     </style>
 </head>
+
 <body>
+    <iframe src="file:///C:/Users/aea/Downloads/tbr/index.html" width="800" height="600" frameborder="0" allowfullscreen></iframe>
     <h1>Exercicio de tabelas</h1>
     <div id="conteiner">
     <table>
